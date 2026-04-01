@@ -46,19 +46,21 @@ export default function Page() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      {view === "friend" && friendData && (
-        <FriendCard
-          data={friendData}
-          onContinue={() => setView("input")}
-        />
-      )}
+    <div className="flex flex-col items-center justify-center h-[100dvh] w-full overflow-hidden relative p-4">
+      <div className="w-full max-w-md h-full flex flex-col justify-center items-center">
+        {view === "friend" && friendData && (
+          <FriendCard
+            data={friendData}
+            onContinue={() => setView("input")}
+          />
+        )}
 
-      {view === "input" && <InputForm onSubmit={handleSubmit} />}
+        {view === "input" && <InputForm onSubmit={handleSubmit} />}
 
-      {view === "result" && result && (
-        <ResultCard data={result} onShare={handleShare} />
-      )}
+        {view === "result" && result && (
+          <ResultCard data={result} onShare={handleShare} />
+        )}
+      </div>
     </div>
   );
 }
