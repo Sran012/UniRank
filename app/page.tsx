@@ -46,8 +46,8 @@ export default function Page() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-[100dvh] w-full overflow-hidden relative p-4">
-      <div className="w-full max-w-md h-full flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center justify-center h-[100dvh] sm:h-auto sm:min-h-screen w-full overflow-hidden sm:overflow-visible relative p-4">
+      <div className="w-full max-w-md h-full sm:h-auto flex flex-col justify-center items-center gap-6 sm:py-4">
         {view === "friend" && friendData && (
           <FriendCard
             data={friendData}
