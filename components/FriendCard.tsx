@@ -25,19 +25,32 @@ export default function FriendCard({ data, onContinue }: Props) {
           </div>
 
           <div className="grid grid-cols-2 gap-3 sm:gap-6">
-            <div className="neobrutal-box-inner p-2 sm:p-4 text-center flex flex-col justify-center items-center bg-white border-[4px] shadow-[3px_3px_0_var(--foreground)]">
+            <div className="neobrutal-box-inner p-2 sm:p-4 text-center flex flex-col items-center bg-white border-[4px] shadow-[3px_3px_0_var(--foreground)]">
               <div className="text-[10px] sm:text-[12px] font-black uppercase tracking-widest bg-[var(--foreground)] text-white mb-2 px-2 py-1 w-full border-b-[4px] border-[var(--foreground)] -mt-2 -mx-2 sm:-mt-4 sm:-mx-4">Attractive</div>
               <div className="text-2xl sm:text-4xl font-black text-[var(--danger)] leading-none">😳 {data.attractive}%</div>
             </div>
-            <div className="neobrutal-box-inner p-2 sm:p-4 text-center flex flex-col justify-center items-center bg-white border-[4px] shadow-[3px_3px_0_var(--foreground)]">
-              <div className="text-[10px] sm:text-[12px] font-black uppercase tracking-widest bg-[var(--foreground)] text-[var(--primary)] mb-2 px-2 py-1 w-full border-b-[4px] border-[var(--foreground)] -mt-2 -mx-2 sm:-mt-4 sm:-mx-4">Secret Haters</div>
+            <div className="neobrutal-box-inner p-2 sm:p-4 text-center flex flex-col items-center bg-white border-[4px] shadow-[3px_3px_0_var(--foreground)]">
+              <div className="text-[10px] sm:text-[12px] font-black uppercase tracking-widest bg-[var(--foreground)] text-white mb-2 px-2 py-1 w-full border-b-[4px] border-[var(--foreground)] -mt-2 -mx-2 sm:-mt-4 sm:-mx-4">Vibe</div>
+              <div className="text-2xl sm:text-4xl font-black text-[var(--secondary)] leading-none">✨ {data.vibe}</div>
+            </div>
+            <div className="neobrutal-box-inner p-2 sm:p-4 text-center flex flex-col items-center bg-white border-[4px] shadow-[3px_3px_0_var(--foreground)]">
+              <div className="text-[10px] sm:text-[12px] font-black uppercase tracking-widest bg-[var(--foreground)] text-white mb-2 px-2 py-1 w-full border-b-[4px] border-[var(--foreground)] -mt-2 -mx-2 sm:-mt-4 sm:-mx-4">Crushes</div>
+              <div className="text-2xl sm:text-4xl font-black text-[var(--success)] leading-none">😻 {data.crushes}</div>
+            </div>
+            <div className="neobrutal-box-inner p-2 sm:p-4 text-center flex flex-col items-center bg-white border-[4px] shadow-[3px_3px_0_var(--foreground)]">
+              <div className="text-[10px] sm:text-[12px] font-black uppercase tracking-widest bg-[var(--foreground)] text-white mb-2 px-2 py-1 w-full border-b-[4px] border-[var(--foreground)] -mt-2 -mx-2 sm:-mt-4 sm:-mx-4">Haters</div>
               <div className="text-2xl sm:text-4xl font-black text-[var(--warning)] leading-none">🔪 {data.haters}</div>
             </div>
           </div>
 
-          <div className="bg-[var(--secondary)] text-white border-[4px] border-[var(--foreground)] p-4 sm:p-6 text-center mt-6 sm:mt-10 shadow-[4px_4px_0_var(--foreground)] relative">
-            <div className="absolute -top-[16px] left-1/2 -translate-x-1/2 bg-[var(--foreground)] text-white text-xs font-black px-4 py-1 border-[3px] border-[var(--foreground)] uppercase whitespace-nowrap">Red Flag</div>
+          <div className="bg-[var(--warning)] text-[var(--foreground)] border-[4px] border-[var(--foreground)] p-4 sm:p-6 text-center mt-6 sm:mt-10 shadow-[4px_4px_0_var(--foreground)] relative">
+            <div className="absolute -top-[16px] left-1/2 -translate-x-1/2 bg-[var(--foreground)] text-white text-xs font-black px-4 py-1 border-[3px] border-[var(--foreground)] uppercase whitespace-nowrap shadow-[3px_3px_0_var(--danger)]">Biggest Red Flag</div>
             <div className="text-xl sm:text-3xl font-black mt-2 leading-tight py-1">{data.redFlags}</div>
+          </div>
+
+          <div className="flex items-center justify-between bg-white border-[4px] border-[var(--foreground)] p-3 sm:p-5 mt-2 shadow-[4px_4px_0_var(--foreground)]">
+            <span className="font-extrabold uppercase text-[var(--foreground)] text-xs sm:text-base">Loyalty </span>
+            <span className="font-black text-xl sm:text-3xl text-[var(--secondary)]">🤝 {data.loyalty}%</span>
           </div>
         </div>
       </div>
