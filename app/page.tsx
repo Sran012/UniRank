@@ -17,14 +17,20 @@ export default function Page() {
   const [result, setResult] = useState<Result | null>(null);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
+    // Robust param extraction for mobile browsers
+    const search = typeof window !== 'undefined' ? window.location.search : '';
+    const params = new URLSearchParams(search);
     const data = params.get("data");
 
     if (data) {
-      const decoded = decodeData(data);
-      if (decoded) {
-        setFriendData(decoded);
-        setView("friend");
+      try {
+        const decoded = decodeData(data);
+        if (decoded) {
+          setFriendData(decoded);
+          setView("friend");
+        }
+      } catch (e) {
+        console.error("Failed to decode share data", e);
       }
     }
   }, []);
@@ -39,7 +45,9 @@ export default function Page() {
     if (!result) return;
 
     const encoded = encodeData(result);
-    const link = `${window.location.origin}?data=${encoded}`;
+    // CRITICAL: We must encodeURIComponent the Base64 string so '+' and '=' characters 
+    // are not corrupted into spaces by mobile apps/browsers.
+    const link = `${window.location.origin}${window.location.pathname}?data=${encodeURIComponent(encoded)}`;
 
     navigator.clipboard.writeText(link);
     alert("Copied 🔥");
