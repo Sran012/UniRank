@@ -1,16 +1,10 @@
-# ⚡️ UniRank: The High-Contrast Vibe engine
+# ⚡️ UniRank: check your rank among your friends
 
-**UniRank** is a loud, unapologetic social ranking app built with a core focus on **Neobrutalist design**. It uses name-based hashing to generate consistent "personality snapshots" that can be shared instantly across mobile platforms.
+**UniRank** is a social ranking app built with a core focus on **Neobrutalist design**. It uses name-based hashing to generate consistent "personality snapshots" that can be shared instantly across mobile platforms.
 
 No database, no signups—just raw stats and sharp corners.
 
 ---
-
-## 🎨 The Aesthetic
-We threw the modern, "soft-rounded" UI handbook in the trash.
-- **Neobrutalist Core**: 4px solid borders, zero border-radius, and aggressive drop shadows.
-- **Vibrant Contrast**: A high-impact palette using `Primary Yellow (#FDC800)`, `Indigo (#432DD7)`, and `Crimson (#DC2626)`.
-- **Interactive Tactility**: Buttons and cards that react with physical translation on hover/click.
 
 ## 🚀 Key Features
 
@@ -20,20 +14,19 @@ We threw the modern, "soft-rounded" UI handbook in the trash.
   - **Red Flags**: 🚩 We expose the "Toxic," the "Gaslighters," and the "Replies in 3 days."
   - **Attractiveness & Loyalty**: Calculated (not-so) scientifically.
 - **Stateless Sharing**: We encode all card data into URL parameters (Base64 + URI encoded). This ensures that when you share a link, your friend sees *exactly* what you saw—with zero server overhead.
-- **Mobile First**: Tailored for the "Viral Link" experience on iOS/Android.
+- **Mobile First**: Tailored for the "Viral Link" experience on mobiles.
 
 ## 🛠️ Tech Stack
 
-- **Next.js 15+**: Leveraging the latest App Router patterns.
-- **Tailwind CSS 4**: Utilizing the new `@theme` engine and CSS-first configuration.
-- **TypeScript**: Strict typing for consistent data encoding/decoding.
-- **Deployment**: Optimized for Vercel edge runtime.
+- **Next.js 15+**
+- **Tailwind CSS 4**
+- **TypeScript**
 
 ## 🚦 Getting Started
 
 1. **Clone the energy**
    ```bash
-   git clone https://github.com/yourusername/unirank.git
+   git clone https://github.com/sran012/unirank.git
    cd unirank
    ```
 
@@ -50,4 +43,4 @@ We threw the modern, "soft-rounded" UI handbook in the trash.
 
 ---
 
-Built with ⚡️ by [Sujal](https://github.com/sujal)
+Built with ⚡️ by [Sujal](https://github.com/sran012)
