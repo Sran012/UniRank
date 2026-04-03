@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡️ UniRank: The High-Contrast Vibe engine
 
-## Getting Started
+**UniRank** is a loud, unapologetic social ranking app built with a core focus on **Neobrutalist design**. It uses name-based hashing to generate consistent "personality snapshots" that can be shared instantly across mobile platforms.
 
-First, run the development server:
+No database, no signups—just raw stats and sharp corners.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 The Aesthetic
+We threw the modern, "soft-rounded" UI handbook in the trash.
+- **Neobrutalist Core**: 4px solid borders, zero border-radius, and aggressive drop shadows.
+- **Vibrant Contrast**: A high-impact palette using `Primary Yellow (#FDC800)`, `Indigo (#432DD7)`, and `Crimson (#DC2626)`.
+- **Interactive Tactility**: Buttons and cards that react with physical translation on hover/click.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Consistent Hashing**: Every name generates the same stats every time. It's deterministic, not random.
+- **Social Metrics**:
+  - **Rank & Vibe**: Find out where you actually sit.
+  - **Red Flags**: 🚩 We expose the "Toxic," the "Gaslighters," and the "Replies in 3 days."
+  - **Attractiveness & Loyalty**: Calculated (not-so) scientifically.
+- **Stateless Sharing**: We encode all card data into URL parameters (Base64 + URI encoded). This ensures that when you share a link, your friend sees *exactly* what you saw—with zero server overhead.
+- **Mobile First**: Tailored for the "Viral Link" experience on iOS/Android.
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 15+**: Leveraging the latest App Router patterns.
+- **Tailwind CSS 4**: Utilizing the new `@theme` engine and CSS-first configuration.
+- **TypeScript**: Strict typing for consistent data encoding/decoding.
+- **Deployment**: Optimized for Vercel edge runtime.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚦 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the energy**
+   ```bash
+   git clone https://github.com/yourusername/unirank.git
+   cd unirank
+   ```
 
-## Deploy on Vercel
+2. **Install & Run**
+   ```bash
+   npm install
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Production Build**
+   ```bash
+   npm run build
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with ⚡️ by [Sujal](https://github.com/sujal)
