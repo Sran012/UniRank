@@ -69,6 +69,18 @@ export default function Page() {
           <ResultCard data={result} onShare={handleShare} />
         )}
       </div>
+
+      {/* Built by footer - Desktop only */}
+      <footer className="hidden sm:flex mt-8 mb-4 items-center gap-2 px-4 py-2 bg-[#FDC800] border-[8px] border-[#1C293C] shadow-[4px_4px_0px_0px_#1C293C] rotate-[-1deg] hover:rotate-0 transition-transform cursor-pointer">
+        <a 
+          href="https://github.com/Sran012" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-sm font-black text-[#1C293C] uppercase tracking-wider"
+        >
+          built with 💖 by sujal
+        </a>
+      </footer>
     </div>
   );
 }
